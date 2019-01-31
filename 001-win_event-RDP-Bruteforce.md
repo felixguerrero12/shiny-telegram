@@ -11,15 +11,15 @@ The strategy will function as follows:
 * Alert on any anomalies authentication requests. 
 
 # Technical Context
-Windows Event Logs provides a numerous amount of logs related to the Active Directory environment. Two logs that go hand on hand is 4624 and 4625 which are counterparts to authentication in a Window's environment.
+Windows Event Logs provides a numerous amount of logs related to the Active Directory environment. Two logs that go hand on hand is 4624 and 4625 which are counterparts to authentication in a Window's environment. This method requires Logon Type 10 to identify authentication to the Remote Desktop Protocol, RDP.
 
 When configured correctly, AD Domain Controllers will record Event IDs for authentication requests. The following event IDs are of interest for this ADS: 
 
-|Event Code|Description|Logon Type|Description|
-|----------|-----------|----------|-----------|
+|Event Code|Description|
+|----------|-----------|
 
-4624|An account was successfully logged on.|10|RemoteInteractive
-4625|An account failed to log on.|10|RemoteInteractive
+4624|An account was successfully logged on.
+4625|An account failed to log on.
 
 # Blind Spots and Assumptions
 This strategy relies on the following assumptions:
