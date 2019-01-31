@@ -18,8 +18,8 @@ When configured correctly, AD Domain Controllers will record Event IDs for authe
 |Event Code|Description|Logon Type|Description|
 |----------|-----------|----------|-----------|
 
-4624|An account was successfully logged on.|10|RemoteInteractive|
-4625|An account failed to log on.|10|RemoteInteractive|
+4624|An account was successfully logged on.|10|RemoteInteractive
+4625|An account failed to log on.|10|RemoteInteractive
 
 # Blind Spots and Assumptions
 This strategy relies on the following assumptions:
