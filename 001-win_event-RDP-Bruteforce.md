@@ -11,7 +11,7 @@ The strategy will function as follows:
 * Alert on any anomalies authentication requests. 
 
 # Technical Context
-Privileged Groups are a list of abstract high-value targets in AD that provide privileged access or can be misused to perform privilege escalation. These include [builtin AD groups (e.g. Account Operators, Domain Admins, Enterprise Admins)](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/appendix-b--privileged-accounts-and-groups-in-active-directory) as well as custom groups which have been delegated sensitive permissions. 
+Windows Event Logs provides a numerous amount of logs related to the Active Directory environment. Two logs that go hand on hand is 4624 and 4625 which are counterparts to authentication in a Window's environment.
 
 When configured correctly, AD Domain Controllers will record Event IDs for authentication requests. The following event IDs are of interest for this ADS: 
 
