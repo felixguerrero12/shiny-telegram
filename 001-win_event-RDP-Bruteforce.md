@@ -17,7 +17,6 @@ When configured correctly, AD Domain Controllers will record Event IDs for authe
 
 |Event Code|Description|
 |----------|-----------|
-
 4624|An account was successfully logged on.
 4625|An account failed to log on.
 
