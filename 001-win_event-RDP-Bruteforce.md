@@ -54,6 +54,8 @@ Validation can occur for this ADS by performing the following execution on a lin
 hydra -t 1 -V -f -l administrator -P wordlist.txt rdp://10.0.0.1
 ``` 
 
+This validation scenario will attempt to authenticate to the 10.0.0.1 host using the password list wordlist.txt. This should enumerate a large amount of Event ID 4625 triggering a detection for Window RDP Bruteforce.
+
 # Response
 In the event that this alert fires, the following response procedures are recommended:
 * Validate where the authentication requests are coming from.
