@@ -15,10 +15,11 @@ Windows Event Logs provides a numerous amount of logs related to the Active Dire
 
 When configured correctly, AD Domain Controllers will record Event IDs for authentication requests. The following event IDs are of interest for this ADS: 
 
-|Event Code|Description|
-|----------|-----------|
-4624|An account was successfully logged on.|
-4625|An account failed to log on.|
+|Event Code|Description|Logon Type|Description|
+|----------|-----------|----------|-----------|
+
+4624|An account was successfully logged on.|10|RemoteInteractive|
+4625|An account failed to log on.|10|RemoteInteractive|
 
 # Blind Spots and Assumptions
 This strategy relies on the following assumptions:
